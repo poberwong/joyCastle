@@ -5,7 +5,7 @@ import Tab1 from './pages/Tab1'
 import Tab2 from './pages/Tab2'
 
 export default class extends Component {
-  componentDidMount () {
+  componentWillMount () {
     setTimeout(() => {
       SplashScreen.hide()
     }, 3000)

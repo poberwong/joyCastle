@@ -1,12 +1,9 @@
-/**
- * Created by poberwong on 2018/11/5.
- */
 export const Color = {
   button: {
     background: {
-      primary: '#a379f5',
-      default: '#36ABAF',
-      danger: '#ff7e7e',
+      primary: 'green',
+      default: '#36abaf',
+      danger: 'red',
       disabled: 'rgba(204, 204, 204, 0.5)'
     },
     font: {
@@ -14,13 +11,12 @@ export const Color = {
       default: 'white'
     },
     border: {
-      default: '#eae0ff'
+      default: 'gray'
     }
   },
   app: {
     background: 'white'
-  },
-  primary: '#36ABAF'
+  }
 }
 
 export const Size = {
