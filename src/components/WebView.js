@@ -42,7 +42,7 @@ export default class extends Component {
         {
           loading &&
           <ActivityIndicator
-            size='large'
+            size='small'
             style={{position: 'absolute', alignSelf: 'center', top: '50%'}} />
         }
       </View>

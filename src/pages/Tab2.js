@@ -10,7 +10,7 @@ export default class Settings extends React.Component {
   render () {
     return (
       <View style={styles.container}>
-        <Text>Tab2</Text>
+        <Text style={styles.hinter}>I'm Tab2</Text>
       </View>
     )
   }
@@ -22,5 +22,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: Color.app.background
+  },
+  hinter: {
+    lineHeight: 30,
+    fontSize: 14
   }
 })

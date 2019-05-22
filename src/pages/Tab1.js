@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, StyleSheet } from 'react-native'
+import { View, StyleSheet, Text } from 'react-native'
 import WebView from '../components/WebView'
 import Button from '../components/Button'
 import Overlay from 'teaset/components/Overlay/Overlay'
@@ -26,6 +26,7 @@ export default class HomeScreen extends React.Component {
   render () {
     return (
       <View style={styles.container}>
+        <Text style={styles.hinter}>I'm Tab1, Look, there is a button</Text>
         <Button onPress={this._preview} title='Preview' />
       </View>
     )
@@ -38,7 +39,7 @@ export default class HomeScreen extends React.Component {
         style={styles.overlay}
         onDisappearCompleted={this._goTab2}
       >
-        <WebView source={{uri: 'https://baidu.com'}} />
+        <WebView source={{uri: 'https://xkcd.com'}} />
       </Overlay.View>
     )
   }
@@ -50,6 +51,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: Color.app.background
+  },
+  hinter: {
+    lineHeight: 30,
+    fontSize: 14
   },
   preview: {
     paddingHorizontal: 15,
