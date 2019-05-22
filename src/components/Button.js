@@ -57,11 +57,11 @@ export default function Button (props) {
         disabled ? typeStyles.disabled : typeStyles[type],
         style]}>
       <View style={[buttonStyles.container, containerStyle]}>
-        <View style={{flex: 1}}>{leftView}</View>
+        {leftView}
         <Text style={[titleStyles[size], titleStyles[type], textStyle]}>
           {title}
         </Text>
-        <View style={{flex: 1}}>{rightView}</View>
+        {rightView}
       </View>
     </TouchableOpacity>
   )

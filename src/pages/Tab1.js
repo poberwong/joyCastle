@@ -27,7 +27,7 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Text style={styles.hinter}>I'm Tab1, Look, there is a button</Text>
-        <Button onPress={this._preview} title='Preview' />
+        <Button style={styles.preview} onPress={this._preview} title='Preview' />
       </View>
     )
   }
@@ -57,10 +57,10 @@ const styles = StyleSheet.create({
     fontSize: 14
   },
   preview: {
-    paddingHorizontal: 15,
+    paddingHorizontal: 25,
     paddingVertical: 8
   },
   overlay: {
-    margin: 30
+    margin: 50
   }
 })
